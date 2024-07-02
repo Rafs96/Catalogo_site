@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Empresas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="./empresas.html">Todas as Empresas</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="pesquisa">
+        <div class="container">
+           
+            <div id="filtros">
+                <h3>Filtros <img src="./imagens/water-306142_640.png" alt="logo filtro"></h3>
+                
+                <select id="tipo-servico">
+                    <option value="Manutenção">Tipo de Serviço</option>
+                    <option value="Instalação">Instalação</option>
+                    <option value="Reparação">Reparação</option>
+                    <option value="Check_up">Check_up</option>
+                    <option value="Remoção">Remoção</option>
+                    <option value="Transporte">Transporte</option>
+                    </select>
+                <select id="tipo-produto">
+                    <option value="1">Tipo de Produto</option>
+                    <option value="2">Acessorios</option>
+                    <option value="3">Construção</option>
+                    <option value="4">Tecnologia</option>
+                    <option value="5">Sustentável</option>
+                    </select>
+                <select id="localizacao">
+                    <option value="">Localização</option>
+                    <option value="N">Norte</option>
+                    <option value="NE">Nordeste</option>
+                    <option value="S">Sul</option>
+                    <option value="SE">Sudeste</option>
+                    <option value="CO">Centro-Oeste</option>
+                    
+                    </select>
+            </div>
+            <h2>Pesquisa <img src="./imagens/lupa_1.png" alt="logo pesquisa"></h2>
+            <input type="text" id="barra-pesquisa" placeholder="Pesquisar empresas...">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Catálogo de Empresas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

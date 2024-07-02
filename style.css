@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #673AB7; /* Cinza claro */
+
+}
+
+header {
+    
+    background-color: #673AB7; /* Roxo escuro */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    background-image: url('./imagens/icon-4102192_640.png');
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#pesquisa img {
+    max-width: 20px;
+    height: 20px;
+}
+nav {
+    background-color: #673AB7;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #673AB7;
+}
+
+nav li {
+    float: left;
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #42258C; /* Roxo escuro */
+}
+
+#pesquisa {
+    background-color: #fff;
+    padding: 20px 0 100px 0;
+    
+}
+
+#pesquisa h2 {
+    margin-bottom: 20px;
+}
+
+#barra-pesquisa {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#filtros {
+    margin-top: 20px;
+}
+
+#filtros select {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+#listagem {
+    background-color: #f2f2
+    
+}
+
+#empresa {
+    background-color: #ffffff;
+}
+
+#empresa img{ 
+    max-width: 200px;
+    height: 200px;
+}
