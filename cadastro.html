@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresas Cadastradas</title>
+    <title>Cadastro de Empresas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Empresas Cadastradas</h1>
+            <h1>Cadastro de Empresas</h1>
         </div>
     </header>
     <nav>
@@ -22,12 +22,23 @@
             </ul>
         </div>
     </nav>
-    <div id="listaEmpresas"></div>
+    <section id="cadastro">
+        <div class="container">
+            <form id="formCadastro">
+                <input type="text" id="nome" placeholder="Nome da Empresa" required>
+                <input type="text" id="area" placeholder="Área" required>
+                <textarea id="descricao" placeholder="Descrição" required></textarea>
+                <input type="text" id="contato" placeholder="Contato" required>
+                <textarea id="produtosServicos" placeholder="Produtos e Serviços" required></textarea>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; 2024 Catálogo de Empresas</p>
         </div>
     </footer>
-    <script src="script_exibicao.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
