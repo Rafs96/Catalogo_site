@@ -1,16 +1,12 @@
 document.getElementById('btn-pesquisar').addEventListener('click', function() {
-    const servico = document.getElementById('tipo-servico').value.toLowerCase();
-    const produto = document.getElementById('tipo-produto').value.toLowerCase();
+    const area = document.getElementById('area').value.toLowerCase();
     const pesquisa = document.getElementById('barra-pesquisa').value.toLowerCase();
 
     let empresas = JSON.parse(localStorage.getItem('empresas')) || [];
     let resultados = empresas.filter(empresa => {
         let match = true;
 
-        if (servico && !empresa.produtosServicos.toLowerCase().includes(servico)) {
-            match = false;
-        }
-        if (produto && !empresa.produtosServicos.toLowerCase().includes(produto)) {
+        if (area && empresa.area.toLowerCase() !== area) {
             match = false;
         }
         if (pesquisa && !(
@@ -50,4 +46,5 @@ function mostrarResultados(resultados) {
         resultadosDiv.appendChild(divEmpresa);
     });
 }
+
 
